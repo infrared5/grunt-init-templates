@@ -1,0 +1,5 @@
+{
+  "app.json": "{%= name %}.json",
+  "app/script/require-main.js": "app/script/{%= name %}.js",
+  "app/script/app-index.js": "app/script/{%= name %}-index.js"
+}

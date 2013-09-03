@@ -1,0 +1,31 @@
+{
+    "predef": [
+        "requirejs",
+        "describe",
+        "it",
+        "define",
+        "expect",
+        "jasmine",
+        "beforeEach",
+        "afterEach",
+        "spyOn"
+    ],
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "bitwise": true,
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "quotmark": "single",
+    "regexp": true,
+    "undef": true,
+    "strict": true,
+    "trailing": true,
+    "smarttabs": true,
+    "jquery": true
+}

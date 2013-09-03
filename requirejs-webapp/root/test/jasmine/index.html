@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner</title>
+
+  
+  <script src="../../node_modules/grunt-contrib-jasmine/vendor/jasmine-1.3.1/jasmine.js"></script>
+  <script src="../../node_modules/grunt-contrib-jasmine/vendor/jasmine-1.3.1/jasmine-html.js"></script>
+
+  <script src="lib/jasmine.async.js"></script>
+  <script src="../../app/components/jquery/jquery.min.js"></script>
+  <script src="../../app/components/handlebars/handlebars.js"></script>
+  <script src="../../app/components/requirejs/require.js"></script>
+
+  <script>
+      require.config({
+        "baseUrl":".",
+        "paths":{
+          "spec":"./spec",
+          "src":"../app/scripts"
+          "template":"../app/template"
+        }
+      });
+  </script>
+  
+  <link rel="stylesheet" type="text/css" href="../../node_modules/grunt-contrib-jasmine/vendor/jasmine-1.3.1/jasmine.css">
+  
+  <script>
+    require(['./spec/require-config.helper.js'], function() {
+      require(['./spec/example.spec.js'], function(){
+       
+        var jasmineEnv = jasmine.getEnv();
+
+        jasmineEnv.updateInterval = 1000;
+        var htmlReporter = new jasmine.HtmlReporter();
+        jasmineEnv.addReporter(htmlReporter);
+
+        jasmineEnv.specFilter = function(spec) {
+          return htmlReporter.specFilter(spec);
+        };
+
+        var currentWindowOnload = window.onload;
+
+        if (document.readyState !== 'complete') {
+          window.onload = function() {
+            if (currentWindowOnload) {
+              currentWindowOnload();
+            }
+            jasmineEnv.execute();
+          };
+        } else {
+          jasmineEnv.execute();
+        }
+
+      })
+    });
+  </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.DS_Store
+.grunt
+/dist
+/node_modules
+/app/components
+*.sublime-*
+_SpecRunner.html

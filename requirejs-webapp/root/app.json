@@ -1,0 +1,8 @@
+{
+  "app": "app",
+  "dist": "dist",
+  "connect": {
+    "port": 9000,
+    "host": null
+  }
+}
