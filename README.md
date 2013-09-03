@@ -28,24 +28,25 @@ Usage
 ---
 To scaffold a project using a [grunt-init](http://gruntjs.com/project-scaffolding) template, you run either of two commands.
 
-The following command will look within __~/.grunt-init__ for the *{%= template-name %}*:
-
-  $> grunt-init {%= template-name %}
-
+The following command will look within _~/.grunt-init_ for the __{%= template-name %}__:
+```
+$> grunt-init {%= template-name %}
+```
 You can also define the template as a path:
-
-  $> grunt-init /Users/ir5/grunt-init-templates/{%= template-name %}
-
+```
+$> grunt-init /Users/ir5/grunt-init-templates/{%= template-name %}
+```
 ###Clone & SymLink
-I prefer to clone on my local disk and create symbolic links within __~/.grunt-init__ that point to template directories of this repository.
-
-  $> git clone git@github.com:infrared5/grunt-init-templates.git ir5-grunt-init-templates
-
+I prefer to clone on my local disk and create symbolic links within _~/.grunt-init_ that point to template directories of this repository.
+```
+$> git clone git@github.com:infrared5/grunt-init-templates.git ir5-grunt-init-templates
+```
 To create a symbolic link so [grunt-init](http://gruntjs.com/project-scaffolding) can find the template by name:
-
-  $> ln -s ir5-grunt-init-templates/requirejs-webapp ~/.grunt-init/requirejs-webapp
-
+```
+$> ln -s ir5-grunt-init-templates/requirejs-webapp ~/.grunt-init/requirejs-webapp
+```
 Then, in order to scaffold a new project witht the *requirejs-webapp* template:
-
-  $> mkdir myapp && cd myapp
-  $> grunt-init requirejs-webapp
+```
+$> mkdir myapp && cd myapp
+$> grunt-init requirejs-webapp
+```
