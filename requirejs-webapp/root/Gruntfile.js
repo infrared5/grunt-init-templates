@@ -1,4 +1,4 @@
-/*global config, connect */
+/*global config */
 'use strict';
 var connect = require('connect');
 
@@ -273,7 +273,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
       'test',
-      'casper',
       'build'
   ]);
 };

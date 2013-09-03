@@ -50,3 +50,5 @@ Then, in order to scaffold a new project witht the *requirejs-webapp* template:
 $> mkdir myapp && cd myapp
 $> grunt-init requirejs-webapp
 ```
+
+This allows for keeping the template repository up-to-date on your machine and add or remove templates to the _~/.grunt-init_ directory for ease of use.
