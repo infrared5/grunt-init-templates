@@ -13,14 +13,16 @@ As such, along with [grunt-init](http://gruntjs.com/project-scaffolding), [node]
 
 ###Install npm
 [npm](https://npmjs.org/) is a node package manager.
-
-  $> curl http://npmjs.org/install.sh | sh
+```
+$> curl http://npmjs.org/install.sh | sh
+```
 
 ###Install grunt-init
+```
+$> npm install -g grunt-init
+```
 
-  $> npm install -g grunt-init
-
-__Each project template directory should contain their own README file which will define any additional requirements for the defined project.__
+_Each project template directory should contain their own README file which will define any additional requirements for the defined project._
 
 Usage
 ---
