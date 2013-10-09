@@ -4,7 +4,7 @@ Introduction
 
 Usage
 ---
-Read the main [README](https://github.com/infrared5/grunt-init-templates/blob/master/README.md) on istall requirements and operation of [grunt-init](http://gruntjs.com/project-scaffolding) templates.
+Read the main [README](https://github.com/infrared5/grunt-init-templates/blob/master/README.md) on install requirements and operation of [grunt-init](http://gruntjs.com/project-scaffolding) templates.
 
 ```
 $> mkdir myapp && cd myapp
